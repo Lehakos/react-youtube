@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
-}
+import { API_KEY } from '../keys';
+
+import SearchBar from './SearchBar';
+
+const App = () => (
+    <div className="container">
+        <SearchBar />
+    </div>
+);
+
+export default App;
