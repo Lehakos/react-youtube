@@ -19853,10 +19853,14 @@
 	                'div',
 	                { className: 'container' },
 	                _react2.default.createElement(_SearchBar2.default, { onSearchTermChange: videoSearch }),
-	                _react2.default.createElement(_VideoDetail2.default, { video: this.state.selectedVideo }),
-	                _react2.default.createElement(_VideoList2.default, {
-	                    onVideoSelect: this.onVideoSelect,
-	                    videos: this.state.videos })
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(_VideoDetail2.default, { video: this.state.selectedVideo }),
+	                    _react2.default.createElement(_VideoList2.default, {
+	                        onVideoSelect: this.onVideoSelect,
+	                        videos: this.state.videos })
+	                )
 	            );
 	        }
 	    }, {
